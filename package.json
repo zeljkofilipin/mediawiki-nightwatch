@@ -1,0 +1,19 @@
+{
+  "name": "mediawiki-nightwatch",
+  "version": "0.0.1",
+  "description": "An example repository on how to implement Selenium tests in Node.js using Nightwatch.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeljkofilipin/mediawiki-nightwatch.git"
+  },
+  "author": "Željko Filipin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeljkofilipin/mediawiki-nightwatch/issues"
+  },
+  "homepage": "https://github.com/zeljkofilipin/mediawiki-nightwatch#readme"
+}
