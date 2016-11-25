@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zeljkofilipin/mediawiki-nightwatch/issues"
   },
-  "homepage": "https://github.com/zeljkofilipin/mediawiki-nightwatch#readme"
+  "homepage": "https://github.com/zeljkofilipin/mediawiki-nightwatch#readme",
+  "dependencies": {
+    "nightwatch": "^0.9.9"
+  }
 }
