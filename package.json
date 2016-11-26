@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/zeljkofilipin/mediawiki-nightwatch#readme",
   "dependencies": {
+    "chromedriver": "^2.25.1",
     "nightwatch": "^0.9.9"
   }
 }
