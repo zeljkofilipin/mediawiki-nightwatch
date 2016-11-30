@@ -7,7 +7,7 @@ An example repository on how to implement Selenium tests in Node.js using Nightw
 - [Chrome](https://www.google.com/chrome/)
 - [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
 - [Node.js](https://nodejs.org/en/)
-- [MediaWiki-Vagrant](https://www.mediawiki.org/wiki/MediaWiki-Vagrant)
+- [MediaWiki-Vagrant](https://www.mediawiki.org/wiki/MediaWiki-Vagrant) (optional)
 
 ## Installation
 
