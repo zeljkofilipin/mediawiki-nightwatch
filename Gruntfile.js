@@ -5,7 +5,7 @@ module.exports = function ( grunt ) {
 	// Project configuration
 	grunt.initConfig( {
 
-		// Configure eslint task
+		// Configure ESLint task
 		eslint: {
 			all: [
 				'**/*.js',
@@ -13,7 +13,7 @@ module.exports = function ( grunt ) {
 			]
 		},
 
-		// Configure a jscs task
+		// Configure a JSCS task
 		jscs: {
 			src: [
 				'**/*.js',
