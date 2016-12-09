@@ -5,6 +5,18 @@ module.exports = function ( grunt ) {
 	// Project configuration
 	grunt.initConfig( {
 
+		// Configure JSHint task
+		jshint: {
+			all: [
+				'**/*.js',
+				'!node_modules/**'
+			],
+			options: {
+				jshintrc: '.jshintrc'
+			}
+		},
+
+		// Configure Nightwatch task
 		nightwatch: {
       options: {
         // nightwatch settings
@@ -16,7 +28,7 @@ module.exports = function ( grunt ) {
 	} );
 
 	// Default tasks
-	grunt.registerTask( 'default', 'test' );
-	grunt.registerTask( 'test', 'nightwatch' );
+	grunt.registerTask( 'default', [ 'jshint' ] );
+	grunt.registerTask( 'selenium', 'nightwatch' );
 
 };

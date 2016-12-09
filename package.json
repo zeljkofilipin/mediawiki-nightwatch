@@ -4,7 +4,8 @@
   "description": "An example repository on how to implement Selenium tests in Node.js using Nightwatch.js",
   "main": "index.js",
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "selenium": "grunt selenium"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "dependencies": {
     "chromedriver": "^2.25.1",
     "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
     "grunt-nightwatch": "^0.5.4",
     "load-grunt-tasks": "^3.5.2",
     "nightwatch": "^0.9.9"

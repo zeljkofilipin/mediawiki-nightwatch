@@ -15,7 +15,7 @@ An example repository on how to implement Selenium tests in Node.js using Nightw
 
 ## Usage
 
-    npm test
+    npm run selenium
 
 ## Links
 
