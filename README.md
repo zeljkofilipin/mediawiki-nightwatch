@@ -15,7 +15,7 @@ An example repository on how to implement Selenium tests in Node.js using Nightw
 
 ## Usage
 
-    ./node_modules/nightwatch/bin/nightwatch -t tests/google.js
+    npm test
 
 ## Links
 
