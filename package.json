@@ -24,6 +24,7 @@
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-eslint": "^19.0.0",
     "grunt-jscs": "^3.0.1",
+    "grunt-jsonlint": "^1.1.0",
     "grunt-nightwatch": "^0.5.4",
     "jscs": "^2.11.0",
     "load-grunt-tasks": "^3.5.2",

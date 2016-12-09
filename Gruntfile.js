@@ -35,6 +35,14 @@ module.exports = function ( grunt ) {
 			}
 		},
 
+		// Configure JSONLint task
+		jsonlint: {
+			all: [
+				'**/*.json',
+				'!node_modules/**'
+			]
+		},
+
 		// Configure Nightwatch task
 		nightwatch: {
 			options: {
@@ -49,7 +57,7 @@ module.exports = function ( grunt ) {
 	} );
 
 	// Default tasks
-	grunt.registerTask( 'default', [ 'eslint', 'jscs', 'jshint' ] );
+	grunt.registerTask( 'default', [ 'eslint', 'jscs', 'jshint', 'jsonlint' ] );
 	grunt.registerTask( 'selenium', 'nightwatch' );
 
 };
