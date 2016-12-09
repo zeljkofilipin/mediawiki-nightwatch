@@ -5,6 +5,14 @@ module.exports = function ( grunt ) {
 	// Project configuration
 	grunt.initConfig( {
 
+		// Configure eslint task
+		eslint: {
+			all: [
+				'**/*.js',
+				'!node_modules/**'
+			]
+		},
+
 		// Configure a jscs task
 		jscs: {
 			src: [
@@ -32,8 +40,8 @@ module.exports = function ( grunt ) {
 			options: {
 				// nightwatch settings
 				// jscs:disable requireCamelCaseOrUpperCaseIdentifiers
-				src_folders: [ 'tests' ],
-				output_folder: 'report'
+				src_folders: [ 'tests' ], // eslint-disable-line camelcase
+				output_folder: 'report' // eslint-disable-line camelcase
 				// jscs:enable requireCamelCaseOrUpperCaseIdentifiers
 			}
 		}
@@ -41,7 +49,7 @@ module.exports = function ( grunt ) {
 	} );
 
 	// Default tasks
-	grunt.registerTask( 'default', [ 'jscs', 'jshint' ] );
+	grunt.registerTask( 'default', [ 'eslint', 'jscs', 'jshint' ] );
 	grunt.registerTask( 'selenium', 'nightwatch' );
 
 };
