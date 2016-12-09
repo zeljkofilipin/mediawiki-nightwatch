@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/zeljkofilipin/mediawiki-nightwatch/issues"
   },
-  "homepage": "https://github.com/zeljkofilipin/mediawiki-nightwatch#readme",
+  "homepage": "https://www.mediawiki.org/wiki/Selenium/Node.js",
   "dependencies": {
     "chromedriver": "^2.25.1",
     "nightwatch": "^0.9.9"
