@@ -5,6 +5,17 @@ module.exports = function ( grunt ) {
 	// Project configuration
 	grunt.initConfig( {
 
+		// Configure a jscs task
+		jscs: {
+			src: [
+				'**/*.js',
+				'!node_modules/**'
+			],
+			options: {
+				config: '.jscsrc'
+			}
+		},
+
 		// Configure JSHint task
 		jshint: {
 			all: [
@@ -18,17 +29,19 @@ module.exports = function ( grunt ) {
 
 		// Configure Nightwatch task
 		nightwatch: {
-      options: {
-        // nightwatch settings
-        src_folders: ['tests'],
-        output_folder: 'report',
-      }
-    }
+			options: {
+				// nightwatch settings
+				// jscs:disable requireCamelCaseOrUpperCaseIdentifiers
+				src_folders: [ 'tests' ],
+				output_folder: 'report'
+				// jscs:enable requireCamelCaseOrUpperCaseIdentifiers
+			}
+		}
 
 	} );
 
 	// Default tasks
-	grunt.registerTask( 'default', [ 'jshint' ] );
+	grunt.registerTask( 'default', [ 'jscs', 'jshint' ] );
 	grunt.registerTask( 'selenium', 'nightwatch' );
 
 };
