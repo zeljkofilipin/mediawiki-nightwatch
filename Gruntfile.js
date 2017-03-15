@@ -26,10 +26,8 @@ module.exports = function ( grunt ) {
 		nightwatch: {
 			options: {
 				// nightwatch settings
-				// jscs:disable requireCamelCaseOrUpperCaseIdentifiers
 				src_folders: [ 'tests' ], // eslint-disable-line camelcase
 				output_folder: 'report' // eslint-disable-line camelcase
-				// jscs:enable requireCamelCaseOrUpperCaseIdentifiers
 			}
 		}
 
