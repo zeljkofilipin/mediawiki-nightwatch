@@ -1,3 +1,4 @@
+'use strict';
 module.exports = {
 
 	'User should be able to create account': function ( client ) {

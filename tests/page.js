@@ -1,3 +1,4 @@
+'use strict';
 module.exports = {
 
 	'Page should be created': function ( client ) {

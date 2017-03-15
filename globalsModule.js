@@ -1,3 +1,4 @@
+'use strict';
 var chromedriver = require( 'chromedriver' );
 module.exports = {
 	before: function ( done ) {
