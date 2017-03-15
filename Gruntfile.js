@@ -37,6 +37,5 @@ module.exports = function ( grunt ) {
 
 	// Default tasks
 	grunt.registerTask( 'default', [ 'eslint', 'jsonlint' ] );
-	grunt.registerTask( 'selenium', 'nightwatch' );
 
 };
