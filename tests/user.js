@@ -2,9 +2,10 @@
 module.exports = {
 
 	'User should be able to create account': function ( client ) {
-		client
-		.url( client.launch_url + 'Special:CreateAccount' )
-		.assert.elementPresent( '#wpCreateaccount' )
+		var createaccount = client.page.createaccount();
+		createaccount.createAccount();
+
+		client.assert.elementPresent( '#wpCreateaccount' )
 		.end();
 	},
 
