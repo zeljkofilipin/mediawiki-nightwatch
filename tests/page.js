@@ -2,10 +2,11 @@
 module.exports = {
 
 	'Page should be created': function ( client ) {
-		client
-		.url( client.launch_url + 'Does_not_exist' )
-		.assert.elementPresent( 'li#ca-edit a' )
-		.end();
+		var content = Math.random().toString(),
+			nonExistingPage = client.page.nonExistingPage();
+		nonExistingPage.create( content );
+		nonExistingPage.assert.containsText( '@displayedContent', content );
+		client.end();
 	},
 
 	'Page should be edited': function ( client ) {

@@ -20,7 +20,7 @@
 
   "test_settings" : {
     "default" : {
-      "launch_url" : "http://127.0.0.1:8080/wiki/",
+      "launch_url" : "http://127.0.0.1:8080/w/index.php?title=",
       "selenium_port"  : 9515,
       "selenium_host"  : "localhost",
       "default_path_prefix" : "",
